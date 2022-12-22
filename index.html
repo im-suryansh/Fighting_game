@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Game</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <link href="https://fonts.cdnfonts.com/css/doom-2016-left" rel="stylesheet">
+                
+   
+</head>
+<body>
+    <div  style="position: relative; display: inline-block">
+        <div style="position:absolute;display:flex;width:100%; align-items:center; padding: 20px;">
+            <div id='health-border'style="position: relative;  width: 100% ; ">
+                <div  
+                style="background: rgb(252,51,51);
+                background: linear-gradient(90deg, rgba(252,51,51,1) 0%, rgba(179,35,35,1) 54%, rgba(73,0,0,1) 100%);
+                height:30px ;"></div>
+                <div id="playerhealth" style="display:flex;justify-content:flex-end;position: absolute; background:#818CF8; top:0; bottom:0; width:100%; right:0;"></div>
+            </div>
+
+
+
+
+            <div id='timer'>10</div>
+
+
+            
+
+
+            <div id='health-border' style="position: relative;  width: 100%;">
+                <div  style="background: rgb(252,51,51);
+                background: linear-gradient(270deg, rgba(252,51,51,1) 0%, rgba(179,35,35,1) 54%, rgba(73,0,0,1) 100%);
+                height:30px;">
+              </div>
+                <div id="enemyhealth"
+                 style="position: absolute; background:#818CF8; top:0; bottom:0; left:0; right:0;"></div>
+            </div>
+        </div>
+        <div
+      id="displayText"
+      style="
+        position: absolute;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+      "
+    >
+      Tie
+    </div>
+    <div style="width:100vw; 
+    height:100vh; 
+    position:relative;
+    overflow:hidden ">
+    <canvas></canvas>
+  </div>
+    </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script src="./js/utility.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html> 
