@@ -339,7 +339,7 @@ window.addEventListener('keyup', (event) => {
     switch (event.key) {
     
       case 'ArrowRight':
-        console.log('tesit')
+        
         keys.ArrowRight.pressed = false
         break
       case 'ArrowLeft':
